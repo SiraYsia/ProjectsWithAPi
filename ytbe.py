@@ -1,11 +1,14 @@
 import requests
 import json
+import config
 
 url = 'https://www.googleapis.com/youtube/v3/videos'
+api_key = config.API_KEY
+
 params = {
     'part': 'snippet',
     'chart': 'mostPopular',
-    'key': 'AIzaSyDbkW3MTT4vkSL2XOGfezAwR_WJLVhV0O8'  # Replace with your YouTube API key
+    'key': api_key
 }
 
 response = requests.get(url, params=params)
@@ -19,4 +22,3 @@ else:
         snippet = item.get('snippet', {})
         title = snippet.get('title')
         print(title)
-

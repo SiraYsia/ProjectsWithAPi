@@ -1,13 +1,15 @@
 # WRITE YOUR CODE HERE
-def swap(dic):
-  swapped_dic = {}
-
-  for key, value in dic.items():
-    if not hash(value):
-      return "Cannot swap the keys and values for this dictionary"
-    swapped_dic[value] = key
-
-  return swapped_dic
+def swap(d):
+  keys = d.keys()
+  values = d.values()
+  swapped_tuples = zip(values, keys)
+  value_types = [type(elem) for elem in values]
+  
+  if type({}) in value_types or type([]) in value_types:
+    return 'Cannot swap the keys and values for this dictionary'
+  else:
+    new_dict = dict(swapped_tuples)
+    return new_dict
 
 # test code below
 

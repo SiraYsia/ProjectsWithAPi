@@ -9,6 +9,7 @@ params = {
     'part': 'snippet',
     'chart': 'mostPopular',
     'key': api_key
+    'key': 'AIzaSyDbkW3MTT4vkSL2XOGfezAwR_WJLVhV0O8' 
 }
 
 response = requests.get(url, params=params)

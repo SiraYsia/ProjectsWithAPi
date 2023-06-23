@@ -45,7 +45,7 @@ def retrieve_from_database(data_base_name):
 
 data = makee_youtube_api_requests()
 video_titles = extract_video_titles(data)
-save_video_titles_tod_database(video_titles, 'data_base_name.db')
+save_video_titles_to_database(video_titles, 'data_base_name.db')
 
 
 retrieve_titles = retrieve_from_database('data_base_name.db')

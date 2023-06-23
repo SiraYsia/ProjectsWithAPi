@@ -1,6 +1,3 @@
-#Makes a request to the YouTube Data API to 
-#retrieve the most popular videos. It then 
-#extracts the titles of those videos and prints them.
 import requests
 import pandas as pd
 import sqlalchemy as db
@@ -35,5 +32,7 @@ def retrieve_from_database(data_base_name):
 data = makee_youtube_api_requests()
 video_titles = extract_video_titles(data)
 save_video_titles_tod_database(video_titles, 'data_base_name.db')
+
+
 retrieve_titles = retrieve_from_database('data_base_name.db')
 print(retrieve_titles)

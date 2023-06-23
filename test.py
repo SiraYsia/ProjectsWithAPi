@@ -6,6 +6,7 @@ from ytbe import (
     retrieve_from_database
 )
 
+
 class TestYouTubeAPI(unittest.TestCase):
     def test_extract_video_titles(self):
         # Mock data for testing

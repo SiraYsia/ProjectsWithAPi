@@ -1,5 +1,4 @@
 import unittest
-import pandas as pd
 from ytbe import (
     extract_video_titles,
     save_video_titles_to_database,

@@ -26,8 +26,10 @@ def save_video_titles_tod_database(video_titles, data_base_name):
 def retrieve_from_database(data_base_name):
     engine = db.create_engine('sqlite:///data_base_name.db')
     with engine.connect() as connection:
-        query_result = connection.execute(db.text("SELECT * FROM table_name;")).fetchall()
+        query = "SELECT * FROM table_name;"
+        query_result = connection.execute(db.text(query)).fetchall()
         return pd.DataFrame(query_result)
+
 
 data = makee_youtube_api_requests()
 video_titles = extract_video_titles(data)

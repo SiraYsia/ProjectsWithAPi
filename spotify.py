@@ -1,4 +1,4 @@
-import requests 
+import requests
 import os
 
 CLIENT_ID = os.environ.get('SPOTIFY_CLIENT_ID')

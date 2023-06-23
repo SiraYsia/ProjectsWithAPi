@@ -26,25 +26,29 @@ git clone <git@github.com:SiraYsia/Youtube-API.git>
 
 3. Set the environment variable for your YouTube Data API key:
 
-- Open `.bashrc` file to set the variables every time the terminal restarts:
-  ```
- sudo nano ~/.bashrc
-  ```
+- Open .bashrc file to set the variables every time the terminal restarts:
+
+```
+sudo nano ~/.bashrc
+
+ ```
 
 - Scroll to the bottom of the file and add the following line:
   ```
  export YOTUBE_API_KEY=[YOUR_API_KEY]
   ```
 
-- Press `Ctrl + X` to exit, and when prompted to save, press `Y` and Enter/Return.
+- Press Ctrl + X to exit, and when prompted to save, press Y and Enter/Return.
 
 - Run the following command to set the environment variables for this terminal session:
   ```
  source ~/.bashrc
   ```
-4. Run the script:
 
-python ytbe.py
+4. Run the script:
+```
+ python ytbe.py
+  ```
   
 ## Database
 
@@ -65,5 +69,3 @@ Here is an example of the retrieved video titles:
 | Title 2     |
 | Title 3     |
 | ...         |
-
-

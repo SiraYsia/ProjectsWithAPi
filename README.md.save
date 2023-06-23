@@ -1,0 +1,3 @@
+# Youtube API popular Videos 
+
+This scrpt makes a request to the YouTube Data API to retrive the most popular videos. It then extracts the titles of those videos and prints them. 

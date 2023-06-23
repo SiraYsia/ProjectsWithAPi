@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 from ytbe import (
     extract_video_titles,
-    save_video_titles_to_database,
+    save_video_titles_tod_database,
     retrieve_from_database
 )
 
@@ -26,7 +26,7 @@ class TestYouTubeAPI(unittest.TestCase):
         db_name = 'test_db'
         table_name = 'test_table'
         video_titles = ['Title 1', 'Title 2', 'Title 3']
-        save_video_titles_to_database(video_titles, db_name)
+        save_video_titles_tod_database(video_titles, db_name)
 
         # Test retrieving data from the database
         retrieved_data = retrieve_from_database(db_name)

@@ -3,6 +3,7 @@ import pandas as pd
 import sqlalchemy as db
 import os
 
+
 def makee_youtube_api_requests():
     url = 'https://www.googleapis.com/youtube/v3/videos'
     api_key = os.environ.get('YOTUBE_API_KEY')
